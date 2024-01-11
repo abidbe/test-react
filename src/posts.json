@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Tutorial react bagi pemula",
+    "description": "Tutorial React bagi pemula adalah panduan yang lengkap untuk memulai belajar React, sebuah library JavaScript populer untuk membangun antarmuka pengguna yang interaktif dan responsif. Dalam tutorial ini, Anda akan belajar dasar-dasar React, mulai dari instalasi hingga pembuatan komponen sederhana.",
+    "tags": ["react", "javascript"],
+    "date": "2020-01-01",
+    "isNew": true
+  },
+  {
+    "title": "Panduan Memulai dengan Machine Learning",
+    "description": "Artikel ini akan membimbing Anda melalui langkah-langkah dasar untuk memulai dengan machine learning, termasuk pemahaman tentang algoritma, pengolahan data, dan implementasi model sederhana.",
+    "tags": ["machine learning", "data science"],
+    "date": "2023-02-15",
+    "isNew": true
+  },
+  {
+    "title": "Tips Meningkatkan Produktivitas dalam Bekerja dari Rumah",
+    "description": "Dalam artikel ini, kami akan berbagi beberapa tips efektif untuk meningkatkan produktivitas Anda saat bekerja dari rumah. Dengan strategi ini, Anda dapat mencapai keseimbangan yang lebih baik antara pekerjaan dan kehidupan pribadi.",
+    "tags": ["productivity", "remote work"],
+    "date": "2023-03-10",
+    "isNew": false
+  },
+  {
+    "title": "Seni Kuliner Dunia: Eksplorasi Rasa dari Berbagai Negara",
+    "description": "Mari menjelajahi berbagai cita rasa kuliner dari seluruh dunia dalam artikel ini. Kami akan mengulas makanan khas dari berbagai negara dan memberikan wawasan tentang kekayaan budaya kuliner yang ada di seluruh dunia.",
+    "tags": ["culinary", "food"],
+    "date": "2023-04-05",
+    "isNew": true
+  }
+]
