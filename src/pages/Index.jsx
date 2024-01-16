@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react";
+import { useState } from "react";
 import blogs from "../posts.json";
 import Search from "../components/Search";
 import Article from "../components/Article";
@@ -6,7 +6,6 @@ import Article from "../components/Article";
 function HomePage() {
   const [posts, setPosts] = useState(blogs);
   const [totalPosts, setTotalPosts] = useState(blogs.length); 
-  const [externalPosts, setExternalPosts] = useState([]); 
 
   const onSearch = (searchTerm) => {
     const filteredPosts = blogs.filter((post) =>
@@ -15,11 +14,7 @@ function HomePage() {
     setPosts(filteredPosts);
     setTotalPosts(filteredPosts.length);
   };
-  useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/posts")
-    .then (response => response.json())
-    .then ((json) => setExternalPosts(json))
-  });
+  
 
   return (
     <>
@@ -30,11 +25,7 @@ function HomePage() {
           <Article {...props} key={index} />
         ))}
       </div>
-      <div className="container mx-auto flex flex-col text-start">
-      {externalPosts.map((post, index) => (
-        <div key={index}>- {post.title}</div>
-      ))}
-      </div>
+      
       
     </>
   );

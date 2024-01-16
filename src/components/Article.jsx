@@ -1,3 +1,6 @@
+import { useContext } from "react";
+import { GlobalContext } from "../contexts";
+
 const NewArticle = () => {
   return <span className="text-sm bg-yellow-300 text-slate-700 px-2 py-1 rounded-full m-2">New!</span>;
 };
@@ -5,7 +8,7 @@ const OldArticle = () => {
   return <span className="text-sm bg-slate-600 px-2 py-1 rounded-full m-2 text-white">Old!</span>;
 };
 function Article(props) {
-  
+  const user = useContext(GlobalContext);
   return (
     <div className="my-2 max-w-md mx-auto bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
       <div className="md:flex gap-2">
@@ -15,6 +18,9 @@ function Article(props) {
           <p className="text-gray-600 mt-2">{props.description}</p>
           <div className="text-sm text-gray-500 mt-2">
             Date: {props.date}, Tags: {props.tags.join(",")}
+          </div>
+          <div>
+            <small className="text-slate-800">Created by <b>{user.name}</b></small>
           </div>
           <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full mt-4 focus:outline-none focus:ring focus:ring-blue-300">Click Me</button>
         </div>
